@@ -1,6 +1,4 @@
-# fifa_dashboard.py
-
-# Deployment Link: https://your-dashboard-url.onrender.com
+# Deployment Link: https://darrels-fifa-dashboard.onrender.com/
 
 import pandas as pd
 import dash
