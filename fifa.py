@@ -41,7 +41,7 @@ def get_country_code(country_name):
     try:
         return pycountry.countries.lookup(name).alpha_3
     except:
-        print(f"❌ Could not find ISO code for: {name}")
+        print(f"Could not find ISO code for: {name}")
         return None
 
 # Win counts with ISO codes
@@ -52,7 +52,7 @@ win_counts["Code"] = win_counts["Country"].apply(get_country_code)
 win_counts.dropna(subset=["Code"], inplace=True)
 
 # Debug: print table
-print("✅ Win counts with ISO-3 codes:")
+print("Win counts with ISO-3 codes:")
 print(win_counts)
 
 # Initialize app
